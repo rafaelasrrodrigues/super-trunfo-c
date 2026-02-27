@@ -9,6 +9,8 @@ int main(){
      float area1;
      float pib1;
      int pontos1;
+     float densidade1 = populacao1 / area1;
+     float riqueza1 = pib1 / populacao1;
 
      printf("Cadastro da carta 1\n");
 
@@ -41,6 +43,8 @@ fgets(cidade1, 50, stdin);
     float area2;
     float pib2;
     int pontos2;
+    float densidade2 = populacao2 / area2;
+    float riqueza2 = pib2 / populacao2;
 
     printf("Cadastro da carta 2\n");
 
@@ -75,6 +79,8 @@ fgets(cidade1, 50, stdin);
     printf("Area: %.2f km2\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos turisticos: %d\n", pontos1);
+   printf("Densidade Populacional: %.2f hab/km2\n", densidade1);
+     printf("PIB per Capita: %.2f reais\n", riqueza1);
 
     
     printf("\nCarta 2:\n");
@@ -85,6 +91,7 @@ fgets(cidade1, 50, stdin);
     printf("Area: %.2f km2\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turisticos: %d\n", pontos2);
-
+    printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
+      printf("PIB per Capita: %.2f reais\n", riqueza2);
     return 0;
 }
